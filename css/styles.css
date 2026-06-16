@@ -64,3 +64,11 @@ body {
     outline-offset: 2px;
     border-radius: 4px;
 }
+
+@media (min-width: 520px) {
+    .nav-list {
+        flex-direction: row;
+        gap: var(--spacing-md);
+        /* justify-content:space-between; */
+    }
+}
