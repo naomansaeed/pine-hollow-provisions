@@ -103,13 +103,13 @@ body {
 }
 
 .about {
-    width:100%;
+    width: 100%;
     background: var(--color-surface);
     text-align: center;
 }
 
 .about .container {
-padding: var(--spacing-xl) var(--spacing-md);
+    padding: var(--spacing-xl) var(--spacing-md);
 }
 
 .about h2 {
@@ -120,4 +120,28 @@ padding: var(--spacing-xl) var(--spacing-md);
     max-width: 65ch;
     margin: 0 auto;
     opacity: 0.85;
+}
+
+.products {
+    width: 100%;
+    background: var(--color-bg);
+}
+.products .container {
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+.products h2 {
+    font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem);
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+.product-grid {
+    display: grid;
+    gap: var(--spacing-md);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.product-card {
+    background: var(--color-surface);
+    padding: var(--spacing-md);
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0;
 }
