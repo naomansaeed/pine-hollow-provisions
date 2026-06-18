@@ -175,3 +175,32 @@ body {
     border-radius: 0.5rem;
     border: 1px solid #e2e8f0;
 }
+
+.site-footer {
+    width: 100%;
+    background: var(--color-primary);
+    color: var(--color-surface);
+    text-align: center;
+}
+.site-footer .container {
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+.footer-link {
+    color: var(--color-surface);
+    text-decoration: none;
+    opacity: 0.8;
+    padding: 0.25rem;
+}
+.footer-link:hover,
+.footer-link:focus-visible {
+    opacity: 1;
+    text-decoration: underline;
+}
