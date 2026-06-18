@@ -1,15 +1,14 @@
+/* 1. Design Tokens | Global variables */
 :root {
     --color-bg: #f8fafc;
     --color-text: #0f172a;
+    --color-accent: #3b82f6;
     --color-primary: #0f172a;
     --color-surface: #ffffff;
-    --color-accent: #3b82f6;
-
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
-    --spacing-lg: 1.5rem; /* ← Added missing token */
+    --spacing-lg: 1.5rem;
     --spacing-xl: 3rem;
-
     --font-body: system-ui, -apple-system, sans-serif;
 }
 
@@ -79,21 +78,13 @@ body {
     }
 }
 
-/* Shared container constraint */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Hero */
 .hero {
+    padding: var(--spacing-xl) var(--spacing-md);
+    text-align: center;
     width: 100%;
+
     background: var(--color-primary);
     color: var(--color-surface);
-    text-align: center;
-}
-.hero .container {
-    padding: var(--spacing-xl) var(--spacing-md);
 }
 .hero h1 {
     font-size: clamp(1.8rem, 4vw + 0.5rem, 3rem);
@@ -107,15 +98,21 @@ body {
     opacity: 0.85;
 }
 
-/* About */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .about {
     width: 100%;
     background: var(--color-surface);
     text-align: center;
 }
+
 .about .container {
     padding: var(--spacing-xl) var(--spacing-md);
 }
+
 .about h2 {
     font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem);
     margin-bottom: var(--spacing-md);
@@ -126,7 +123,6 @@ body {
     opacity: 0.85;
 }
 
-/* Products */
 .products {
     width: 100%;
     background: var(--color-bg);
@@ -151,7 +147,6 @@ body {
     border: 1px solid #e2e8f0;
 }
 
-/* Visit */
 .visit {
     width: 100%;
     background: var(--color-surface);
